@@ -82,6 +82,7 @@ const MainLayout = () => {
         <div>
             <h1 className='text-lg font-semibold mt-5 text-gray-200'>Visit Us</h1>
             <LeafletMapComponent/>
+            <p className='text-gray-200 mt-2 text-sm shadow p-2 bg-gray-800 rounded'>Address: 20/33,Ramakrishnapuram 3rd street, West Mambalam, Chennai, Tamil Nadu 600033</p>
 
         </div>
 
