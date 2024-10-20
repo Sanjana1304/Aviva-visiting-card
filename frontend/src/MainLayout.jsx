@@ -1,5 +1,6 @@
 import React from 'react';
 import LeafletMapComponent from './LeafletMapComponent';
+import Categories from './Categories';
 
 const MainLayout = () => {
   return (
@@ -19,10 +20,10 @@ const MainLayout = () => {
                 <a href="#" className="text-white hover:text-gray-800 transition">Home</a>
               </li>
               <li>
-                <a href="#" className="text-white hover:text-gray-800 transition">About</a>
+                <a href="#cats" className="text-white hover:text-gray-800 transition">Products</a>
               </li>
               <li>
-                <a href="#" className="text-white hover:text-gray-800 transition">Contact</a>
+                <a href="#address" className="text-white hover:text-gray-800 transition">Address</a>
               </li>
             </ul>
           </nav>
@@ -33,12 +34,13 @@ const MainLayout = () => {
         {/* Profile Section */}
         <div className="text-center mt-4">
           <img
-            src="profile-image-url-here"
+            src="/aviva_logo.png"
             alt="Aviva Organics"
-            className="mx-auto rounded-full w-24 h-24 border-4 border-gray-300"
+            className="mx-auto rounded-full w-24 h-24 border-3 border-gray-300"
           />
           <h3 className="text-xl text-gray-100 font-semibold mt-2">Dr. S Gajalakshmi</h3>
           <p className="text-sm text-gray-200">Founder & Director</p>
+          <p className='text-sm animate-color-change-phone'><a href='tel:+919047366444'>+91 9047366444</a> |<a href='tel:+917604885943'>+91 7604885943</a></p>
         </div>
 
         {/* Quote/Description */}
@@ -52,7 +54,7 @@ const MainLayout = () => {
         <div className="mt-6 space-y-4">
           <a
             href=""
-            className="flex items-center justify-center bg-gray-200 py-2 rounded-full hover:bg-gray-300 transition">
+            className="animate-color-change-cta flex items-center justify-center bg-gray-200 py-2 rounded-full hover:bg-gray-300 transition">
                 <div className='w-1/3 flex'>
                 <img src="/wap_icon.png" className="w-6 h-6 mr-2" />
                 <span>Whatsapp</span>
@@ -60,9 +62,9 @@ const MainLayout = () => {
           </a>
 
           <a
-            href="http://vla.org.in"
+            href="http://avivaorganics.in/"
             target='_blank'
-            className="flex items-center justify-center bg-gray-200 py-2 rounded-full hover:bg-gray-300 transition">
+            className="animate-color-change-cta-rev flex items-center justify-center bg-gray-200 py-2 rounded-full hover:bg-gray-300 transition">
                 <div className='w-1/3 flex'>
                 <img src="/website_icon.png" className="w-6 h-6 mr-2" />
                 <span>Website</span>
@@ -70,8 +72,8 @@ const MainLayout = () => {
           </a>
 
           <a
-            href="mailto:sensanjana072@gmail.com"
-            className="flex items-center justify-center bg-gray-200 py-2 rounded-full hover:bg-gray-300 transition">
+            href="mailto:avivaorganicstores@gmail.com"
+            className="animate-color-change-cta flex items-center justify-center bg-gray-200 py-2 rounded-full hover:bg-gray-300 transition">
             <div className='w-1/3 flex'>
                 <img src="/mail_icon.png" className="w-6 h-6 mr-2" />
                 <span>Mail Us</span>
@@ -79,11 +81,21 @@ const MainLayout = () => {
           </a>
         </div>
 
-        <div>
+        <div id='cats'>
+        <Categories/>
+        </div>
+        
+
+        <div id='address'>
             <h1 className='text-lg font-semibold mt-5 text-gray-200'>Visit Us</h1>
             <LeafletMapComponent/>
             <p className='text-gray-200 mt-2 text-sm shadow p-2 bg-gray-800 rounded'>Address: 20/33,Ramakrishnapuram 3rd street, West Mambalam, Chennai, Tamil Nadu 600033</p>
 
+        </div>
+
+        <div className='flex text-[10px] justify-between text-white p-2'>
+          <a className='flex' href='mailto:avivaorganicstores@gmail.com'><img src="/mail_icon.png" className="w-4 h-4 mr-1" />avivaorganicstores@gmail.com</a>
+          <a className='flex' href='https://avivaorganics.in/'> <img src="/website_icon.png" className="w-4 h-4 mr-1" />avivaorganics.in</a>
         </div>
 
         
