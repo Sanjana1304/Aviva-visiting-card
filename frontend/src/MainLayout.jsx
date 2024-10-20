@@ -40,7 +40,7 @@ const MainLayout = () => {
           />
           <h3 className="text-xl text-gray-100 font-semibold mt-2">Dr. S Gajalakshmi</h3>
           <p className="text-sm text-gray-200">Founder & Director</p>
-          <p className='text-sm animate-color-change-phone'><a href='tel:+919047366444'>+91 9047366444</a> |<a href='tel:+917604885943'>+91 7604885943</a></p>
+          <p className='flex justify-center text-sm animate-color-change-phone'><img src="/callicon.png" alt="" className='h-4 mr-1 w-4' /><a href='tel:+919047366444' className='mr-1'>+91 9047366444 </a> | <a href='tel:+917604885943' className='ml-1'>+91 7604885943</a></p>
         </div>
 
         {/* Quote/Description */}
