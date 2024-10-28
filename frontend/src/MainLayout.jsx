@@ -53,7 +53,7 @@ const MainLayout = () => {
         {/* Action Buttons */}
         <div className="mt-6 space-y-4">
           <a
-            href=""
+            href="https://wa.me/9047366444"
             className="animate-color-change-cta flex items-center justify-center bg-gray-200 py-2 rounded-full hover:bg-gray-300 transition">
                 <div className='w-1/3 flex'>
                 <img src="/wap_icon.png" className="w-6 h-6 mr-2" />
